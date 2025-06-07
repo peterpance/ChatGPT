@@ -1,0 +1,15 @@
+<view class="container">
+  <view class="form-item">
+    <text>Step Count</text>
+    <input type="number" model:value="{{stepCount}}" bindinput="onStepCount" />
+  </view>
+  <view class="form-item">
+    <text>Brightness</text>
+    <slider min="0" max="100" value="{{brightness}}" bindchange="onBrightness" />
+  </view>
+  <view class="form-item">
+    <text>Delay(ms)</text>
+    <input type="number" model:value="{{delay}}" bindinput="onDelay" />
+  </view>
+  <button bindtap="saveSettings" type="primary">Save</button>
+</view>

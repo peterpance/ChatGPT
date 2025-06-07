@@ -1,0 +1,10 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/debug/debug",
+    "pages/settings/settings"
+  ],
+  "window": {
+    "navigationBarTitleText": "Bluetooth App"
+  }
+}
