@@ -1,0 +1,11 @@
+<view class="container">
+  <view>
+    <input type="text" placeholder="Enter data" model:value="{{inputText}}" bindinput="onInput" />
+    <switch checked="{{isHex}}" bindchange="toggleHex"/> HEX
+    <button bindtap="sendData" type="primary">Send</button>
+  </view>
+  <button bindtap="goToSettings">Settings</button>
+  <view class="log-container">
+    <view wx:for="{{logs}}" wx:key="index">{{item}}</view>
+  </view>
+</view>

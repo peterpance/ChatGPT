@@ -1,0 +1,8 @@
+<view class="container">
+  <button bindtap="startScan" type="primary">Scan Bluetooth Devices</button>
+  <view wx:if="{{scanning}}">Scanning...</view>
+  <view wx:for="{{devices}}" wx:key="deviceId" class="device-item">
+    <text>{{item.name || item.localName}} [{{item.deviceId}}]</text>
+    <button data-id="{{item.deviceId}}" bindtap="connectDevice">Connect</button>
+  </view>
+</view>

@@ -1,0 +1,6 @@
+.container {
+  padding: 20rpx;
+}
+.device-item {
+  margin: 10rpx 0;
+}
